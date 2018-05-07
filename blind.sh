@@ -17,7 +17,7 @@ if [[ ! -d $SRC ]]; then
 fi
 
 # Create destination
-mkdir -p $DEST
+mkdir -p "$DEST"
 
 #FILES=( $(find $SRC -type f) )
 FILES=("$SRC"/$WILD) #TODO: ls *.{tif,tiff} > $FILES
@@ -25,8 +25,6 @@ FILES=("$SRC"/$WILD) #TODO: ls *.{tif,tiff} > $FILES
 COUNT=${#FILES[@]}
 
 echo "Blinding $COUNT files."
-
-
 
 
 # Check if the array has a certain key: inArray "myKey" ${!myArray[@]}"
