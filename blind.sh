@@ -68,5 +68,5 @@ for idx in $(seq 0 $((${#FILES[@]} - 1))); do
     echo "$src    $dest" >> $RECORDS
 
     # Copy rename.
-    cp $src $dest
+    cp "$src" "$dest"
 done
