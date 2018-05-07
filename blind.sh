@@ -20,7 +20,7 @@ fi
 mkdir -p $DEST
 
 #FILES=( $(find $SRC -type f) )
-FILES=($SRC/$WILD) #TODO: ls *.{tif,tiff} > $FILES
+FILES=("$SRC"/$WILD) #TODO: ls *.{tif,tiff} > $FILES
 
 COUNT=${#FILES[@]}
 
